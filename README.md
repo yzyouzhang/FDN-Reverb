@@ -4,6 +4,15 @@ A fast Feedback Delay Network (FDN) reverb implementation using PyTorch, with op
 
 **NEW**: 🎓 **DDSP Version Available!** - Learn reverb parameters automatically from target audio using gradient descent. See [README_DDSP.md](README_DDSP.md) for details.
 
+**NEW**: 📊 **Comparison Tools!** - Comprehensive benchmarks comparing performance, quality, and characteristics. See [README_COMPARISON.md](README_COMPARISON.md) for details.
+
+## Quick Links
+
+- [Traditional FDN Usage](#command-line-usage) - Fast audio processing
+- [DDSP Version](README_DDSP.md) - Learnable reverb
+- [Comparison Tools](README_COMPARISON.md) - Benchmarks and metrics
+- [Theory Comparison](COMPARISON.md) - vs dafx25-ddsp-tutorial
+
 ## Two Versions
 
 This repository now includes **two implementations**:
@@ -18,6 +27,25 @@ This repository now includes **two implementations**:
    - Automatically match target reverb
    - Great for research and learning from examples
    - See [README_DDSP.md](README_DDSP.md) and [COMPARISON.md](COMPARISON.md)
+
+## Comparison Tools
+
+Benchmark and compare implementations:
+
+```bash
+# Run complete comparison suite
+python run_comparison.py --input dry.mp3 --full
+
+# Quick comparison
+python run_comparison.py --quick
+```
+
+Generates:
+- Performance benchmarks (speed, memory, scalability)
+- Audio quality metrics (RT60, spectral analysis)
+- Visualizations (waveforms, spectrograms, frequency response)
+
+See [README_COMPARISON.md](README_COMPARISON.md) for details.
 
 ## Technical Details
 
