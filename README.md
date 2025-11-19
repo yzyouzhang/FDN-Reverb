@@ -2,6 +2,22 @@
 
 A fast Feedback Delay Network (FDN) reverb implementation using PyTorch, with optional C++ extensions for maximum performance. Processes a 2 minutes 48khz stereo song in ~2.4 seconds on M4 MacBook Pro!
 
+**NEW**: 🎓 **DDSP Version Available!** - Learn reverb parameters automatically from target audio using gradient descent. See [README_DDSP.md](README_DDSP.md) for details.
+
+## Two Versions
+
+This repository now includes **two implementations**:
+
+1. **Traditional FDN** (`reverb_util.py`, `main.py`)
+   - Manual parameter control
+   - C++ optimized for speed
+   - Great for audio production
+
+2. **DDSP FDN** (`ddsp_reverb.py`, `train_ddsp.py`, `demo_ddsp.py`)
+   - Learnable parameters via gradient descent
+   - Automatically match target reverb
+   - Great for research and learning from examples
+   - See [README_DDSP.md](README_DDSP.md) and [COMPARISON.md](COMPARISON.md)
 
 ## Technical Details
 
