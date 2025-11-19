@@ -6,10 +6,13 @@ A fast Feedback Delay Network (FDN) reverb implementation using PyTorch, with op
 
 **NEW**: 📊 **Comparison Tools!** - Comprehensive benchmarks comparing performance, quality, and characteristics. See [README_COMPARISON.md](README_COMPARISON.md) for details.
 
+**NEW**: 🚀 **DDSP Applications!** - Neural reverb controller, style transfer, and adaptive reverb demos. See [README_APPLICATIONS.md](README_APPLICATIONS.md) for details.
+
 ## Quick Links
 
 - [Traditional FDN Usage](#command-line-usage) - Fast audio processing
 - [DDSP Version](README_DDSP.md) - Learnable reverb
+- [DDSP Applications](README_APPLICATIONS.md) - Neural networks, style transfer, adaptive
 - [Comparison Tools](README_COMPARISON.md) - Benchmarks and metrics
 - [Theory Comparison](COMPARISON.md) - vs dafx25-ddsp-tutorial
 
@@ -27,6 +30,28 @@ This repository now includes **two implementations**:
    - Automatically match target reverb
    - Great for research and learning from examples
    - See [README_DDSP.md](README_DDSP.md) and [COMPARISON.md](COMPARISON.md)
+
+## DDSP Applications
+
+Practical demos showcasing DDSP capabilities:
+
+```bash
+# Neural network predicts optimal reverb
+python app_neural_reverb.py
+
+# Learn reverb from reference recordings
+python app_style_transfer.py --demo
+
+# Context-aware adaptive reverb
+python app_adaptive_reverb.py --demo
+```
+
+Applications:
+- **Neural Controller**: Auto-suggest reverb based on audio content
+- **Style Transfer**: Clone reverb from famous studios/hardware
+- **Adaptive Reverb**: Real-time parameter adjustment based on dynamics
+
+See [README_APPLICATIONS.md](README_APPLICATIONS.md) for details.
 
 ## Comparison Tools
 
